@@ -1,0 +1,9 @@
+<h1>All Orders</h1>
+<ul>
+  <% @orders.each do |order| %>
+    <li>
+      <a href="<%= order_path(order) %>">Order #<%= order.id %></a> - User: <%= order.user.name %>
+    </li>
+  <% end %>
+</ul>
+

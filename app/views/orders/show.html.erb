@@ -1,0 +1,13 @@
+<h1>Order #<%= @order.id %></h1>
+<p>User: <%= @order.user.name %></p>
+<h2>Items:</h2>
+<ul>
+  <% @order.order_items.each do |item| %>
+    <li>
+      <%= item.product.name %> - Quantity: <%= item.quantity %> - $<%= item.price %>
+    </li>
+  <% end %>
+</ul>
+<a href="/orders">Back to Orders</a>
+
+
