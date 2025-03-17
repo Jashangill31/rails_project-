@@ -1,7 +1,7 @@
 <h1><%= @product.name %></h1>
+
 <p><strong>Price:</strong> $<%= @product.price %></p>
-<p><strong>Stock:</strong> <%= @product.stock_quantity %> available</p>
 <p><strong>Category:</strong> <%= @product.category %></p>
 
-<a href="/products">Back to Products</a>
+<%= link_to "Back to Products", products_path, class: "btn btn-primary" %>
 

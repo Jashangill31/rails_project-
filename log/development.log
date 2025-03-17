@@ -963,3 +963,608 @@ Started GET "/manifest.json" for ::1 at 2025-03-16 17:15:54 -0500
   
 ActionController::RoutingError (No route matches [GET] "/manifest.json"):
   
+Started GET "/products" for 127.0.0.1 at 2025-03-16 18:54:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 7.3ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.5ms)
+Completed 200 OK in 24ms (Views: 9.7ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 18:54:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-03-16 18:54:58 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: <p><strong>Price:</strong> $<%= @product.price %></p>
+    3: <p><strong>Stock:</strong> <%= @product.stock_quantity %> available</p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-03-16 18:54:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 18:55:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/2" for 127.0.0.1 at 2025-03-16 18:55:02 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.9ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: <p><strong>Price:</strong> $<%= @product.price %></p>
+    3: <p><strong>Stock:</strong> <%= @product.stock_quantity %> available</p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 18:55:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/3" for 127.0.0.1 at 2025-03-16 18:55:05 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.3ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.3ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: <p><strong>Price:</strong> $<%= @product.price %></p>
+    3: <p><strong>Stock:</strong> <%= @product.stock_quantity %> available</p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 18:55:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for 127.0.0.1 at 2025-03-16 18:55:32 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.8ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: <p><strong>Price:</strong> $<%= @product.price %></p>
+    3: <p><strong>Stock:</strong> <%= @product.stock_quantity %> available</p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/products" for 127.0.0.1 at 2025-03-16 19:03:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:15
+  Rendered products/index.html.erb within layouts/application (Duration: 8.0ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.7ms)
+Completed 200 OK in 29ms (Views: 12.1ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 19:03:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/%22/products/1/%22" for 127.0.0.1 at 2025-03-16 19:03:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%22/products/1/%22"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 19:03:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/%22/products/2/%22" for 127.0.0.1 at 2025-03-16 19:03:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%22/products/2/%22"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 19:03:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/%22/products/3/%22" for 127.0.0.1 at 2025-03-16 19:03:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/%22/products/3/%22"):
+  
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 19:03:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:09:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/products/index.html.erb:17
+  Rendered products/index.html.erb within layouts/application (Duration: 9.6ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | GC: 1.0ms)
+Completed 200 OK in 33ms (Views: 14.8ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:09:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for ::1 at 2025-03-16 19:09:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 1.2ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: 
+    3: <p><strong>Price:</strong> $<%= @product.price %></p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:09:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/2" for ::1 at 2025-03-16 19:09:29 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 2.1ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `name' for nil:NilClass)
+    1: <h1><%= @product.name %></h1>
+    2: 
+    3: <p><strong>Price:</strong> $<%= @product.price %></p>
+    4: <p><strong>Category:</strong> <%= @product.category %></p>
+  
+app/views/products/show.html.erb:1
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:11:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:11:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 4.3ms | GC: 3.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 3.0ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 23.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `each' for nil:NilClass)
+    14: 
+    15: <!-- Product List -->
+    16: <div class="row">
+    17:   <% @products.each do |product| %>
+    18:     <div class="col-md-4">
+    19:       <div class="card mb-3">
+    20:         <div class="card-body">
+  
+app/views/products/index.html.erb:17
+Started GET "/products/1" for ::1 at 2025-03-16 19:11:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 2.8ms | ActiveRecord: 4.2ms (1 query, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:11:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:11:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+
+Causes:
+NoMethodError (undefined method `each' for nil:NilClass)
+    14: 
+    15: <!-- Product List -->
+    16: <div class="row">
+    17:   <% @products.each do |product| %>
+    18:     <div class="col-md-4">
+    19:       <div class="card mb-3">
+    20:         <div class="card-body">
+  
+app/views/products/index.html.erb:17
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:25:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:30:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 13.0ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | GC: 1.2ms)
+Completed 200 OK in 42ms (Views: 16.8ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for ::1 at 2025-03-16 19:30:48 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/2" for ::1 at 2025-03-16 19:30:53 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.2ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:30:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/3" for ::1 at 2025-03-16 19:30:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:30:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/" for ::1 at 2025-03-16 19:31:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 5.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | GC: 0.9ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:31:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-16 19:32:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 3.6ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2025-03-16 19:32:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/" for ::1 at 2025-03-16 19:32:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:32:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for ::1 at 2025-03-16 19:32:56 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.3ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:32:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/orders" for ::1 at 2025-03-16 19:33:14 -0500
+Processing by OrdersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/orders/index.html.erb:3
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/orders/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/orders/index.html.erb:5
+  Rendered orders/index.html.erb within layouts/application (Duration: 43.4ms | GC: 2.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | GC: 2.2ms)
+Completed 200 OK in 61ms (Views: 41.2ms | ActiveRecord: 4.1ms (3 queries, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:33:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/orders/1" for ::1 at 2025-03-16 19:33:37 -0500
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering orders/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:2
+  [1m[36mOrderItem Load (2.1ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/orders/show.html.erb:5
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:7
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/orders/show.html.erb:7
+  Rendered orders/show.html.erb within layouts/application (Duration: 41.6ms | GC: 1.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | GC: 1.7ms)
+Completed 200 OK in 53ms (Views: 41.2ms | ActiveRecord: 3.0ms (5 queries, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:33:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/about" for ::1 at 2025-03-16 19:33:52 -0500
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:33:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/1" for ::1 at 2025-03-16 19:37:04 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/2" for ::1 at 2025-03-16 19:37:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products" for ::1 at 2025-03-16 19:37:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products/3" for ::1 at 2025-03-16 19:37:08 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products?query=Laptop" for ::1 at 2025-03-16 19:37:16 -0500
+Processing by ProductsController#index as HTML
+  Parameters: {"query"=>"Laptop"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE ?)[0m  [[nil, "%Laptop%"]]
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 4.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.2ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/products?query=Laptop" for ::1 at 2025-03-16 19:37:18 -0500
+Processing by ProductsController#index as HTML
+  Parameters: {"query"=>"Laptop"}
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name LIKE ?)[0m  [[nil, "%Laptop%"]]
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+Started GET "/manifest.json" for ::1 at 2025-03-16 19:37:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  

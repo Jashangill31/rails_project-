@@ -3,16 +3,21 @@ class ProductsController < ApplicationController
     @products = Product.all
 
     if params[:query].present?
-      @products = @products.where("LOWER(name) LIKE ?", "%#{params[:query].downcase}%")
+      @products = @products.where("name LIKE ?", "%#{params[:query]}%")
     end
+  end
 
-    if params[:category].present?
-      @products = @products.where(category: params[:category])
+  def show
+    @product = Product.find_by(id: params[:id])
+
+    if @product.nil?
+      redirect_to products_path, alert: "Product not found"
     end
-
-    @products = @products.page(params[:page]).per(5) # Show 5 products per page
   end
 end
+
+
+
 
 
 
