@@ -1,80 +1,105 @@
-# Rails Project - E-Commerce App
+Rails Intro Project - README
 
-## Overview
-This is a simple **E-Commerce application** built using **Ruby on Rails**. The project allows users to browse products, search for items, and filter by categories. It follows the **Rails MVC framework**, uses a PostgreSQL database, and integrates Bootstrap for styling.
+Project Overview
 
-## Features
-- **Product Listings**: View all available products.
-- **Search & Filtering**: Search for products by name and filter them by category.
-- **Product Details**: Click on any product to see its detailed view.
-- **Responsive Design**: Uses Bootstrap for a clean and user-friendly UI.
-- **Database Management**: Active Record models handle data efficiently.
+This Ruby on Rails project collects book data from OpenLibrary API and generates additional fake user data using the Faker gem. It allows users to browse books, submit reviews, search for books, and paginate through large datasets.
 
-## Technologies Used
-- **Ruby on Rails** (Version: 7.2.2.1)
-- **Bootstrap** for styling
-- **SQLite3** for local development database
-- **PostgreSQL** for production database
-- **GitHub** for version control
+Data Sources
 
-## System Requirements
-Ensure you have the following installed:
-- **Ruby** (Version 3.1.2 or higher)
-- **Rails** (Version 7.2.2.1)
-- **Node.js** & **Yarn**
-- **Bundler**
-- **Git**
+OpenLibrary API - Fetches book titles, authors, and cover images.
 
-## Installation Guide
-### Step 1: Clone the Repository
-```sh
-git clone https://github.com/Jashangill31/rails_project-.git
-cd rails_project-
-```
+Faker Gem - Generates random user reviews and ratings.
 
-### Step 2: Install Dependencies
-```sh
+Features Implemented
+
+1. Database and Models
+
+Books Table (title, author, genre, cover_image, rating)
+
+Users Table (name, email)
+
+Reviews Table (user_id, book_id, rating, comment)
+
+2. Active Record Associations
+
+A Book has many Reviews.
+
+A User has many Reviews.
+
+A Review belongs to both User and Book.
+
+3. Web Navigation
+
+About Page describes the project and data sources.
+
+Navigation Menu links to Books, About, and Home pages.
+
+4. Data Navigation
+
+Collection Navigation: A list of books is displayed in a table format.
+
+Member Pages: Each book has a detailed page showing its reviews.
+
+Multi-model Data: Reviews appear on book detail pages.
+
+Pagination: Kaminari gem is used for paginating large datasets.
+
+5. Search and Filtering
+
+Simple Search: Users can search for books by title.
+
+Hierarchical Search: Books can be filtered by genre (future improvement).
+
+6. Frontend & UI Design
+
+Valid HTML (HTML5 validation with no errors).
+
+ERB Conditionals are used for dynamic content rendering.
+
+Bootstrap Grid is used for responsive layout.
+
+7. Git & Version Control
+
+GitHub Repository with proper commit history.
+
+Minimum 20 commits with meaningful commit messages.
+
+Installation Instructions
+
+Prerequisites
+
+Ruby 3.x
+
+Rails 7.x
+
+PostgreSQL or SQLite3
+
+Setup Instructions
+
+git clone <repo-url>
+cd rails_intro_project
 bundle install
-yarn install
-```
-
-### Step 3: Setup Database
-```sh
 rails db:create
 rails db:migrate
 rails db:seed
-```
-
-### Step 4: Run the Server
-```sh
 rails server
-```
-Now open **http://localhost:3000/** in your browser.
 
-## How to Demonstrate to Instructor
-1. **Start the Server**: Run `rails server` and open **http://localhost:3000/**.
-2. **Show Product Listings**: Demonstrate product browsing on the homepage.
-3. **Search & Filter**: Use the search bar and category filter to refine results.
-4. **Product Details**: Click on "View Details" to show individual product pages.
-5. **Code Walkthrough**: Open `app/controllers/products_controller.rb` and explain how data is fetched.
-6. **GitHub Repository**: Show the instructor the **GitHub repo** and the **commit history** to confirm version control usage.
+Then, visit http://localhost:3000 in your browser.
 
-## Deployment
-To deploy on **Heroku** or another hosting platform:
-```sh
-git push heroku main
-heroku run rails db:migrate
-heroku open
-```
+Future Enhancements
 
-## Future Enhancements
-- Add **User Authentication** for login & signup.
-- Implement a **Cart System**.
-- Integrate **Payments (Stripe/PayPal)**.
+Implement Hierarchical Search
 
-## Author
-**Jashandeep Kaur**
+Add User Authentication
 
-For any issues or contributions, open a **GitHub issue** or submit a **pull request**.
+Integrate Google Maps API for book store locations
 
+Deploy to Heroku or Render
 
+Contributors
+
+jashandeep - Developer
+
+License
+
+This project is open-source and available under the MIT License.
